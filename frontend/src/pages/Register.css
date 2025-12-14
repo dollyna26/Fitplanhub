@@ -1,0 +1,376 @@
+/* Registration Page Styles */
+.register-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  margin: 0;
+  padding: 0;
+}
+
+.left-side {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+              url('https://images.unsplash.com/photo-1534367507877-0edd93bd013b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.left-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(106, 17, 203, 0.85), rgba(37, 117, 252, 0.85));
+  display: flex;
+  align-items: center;
+  padding: 3rem;
+}
+
+.left-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: center;
+  padding: 1.2rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.benefit-item:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.benefit-icon {
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 193, 7, 0.2);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+  font-size: 1.5rem;
+}
+
+.testimonial {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  border-left: 4px solid #ffc107;
+}
+
+.testimonial-avatar {
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.right-side {
+  background: #f8f9fa;
+  padding: 2rem;
+}
+
+.register-card {
+  border-radius: 20px;
+  overflow: hidden;
+  background: white;
+  transition: transform 0.3s ease;
+}
+
+.register-card:hover {
+  transform: translateY(-5px);
+}
+
+.progress-container {
+  background: #f8f9fa;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.progress-bar {
+  border-radius: 4px;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  box-shadow: 0 10px 20px rgba(106, 17, 203, 0.3);
+  animation: glow 3s infinite ease-in-out;
+}
+
+/* Role Selection Styles */
+.role-selection .role-card {
+  border-radius: 15px !important;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.role-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1) !important;
+}
+
+.role-card.active {
+  border: 2px solid transparent !important;
+}
+
+.btn-primary-gradient.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  color: white !important;
+  border: none !important;
+}
+
+.btn-warning-gradient.active {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%) !important;
+  color: white !important;
+  border: none !important;
+}
+
+.role-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1rem;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: #6a11cb;
+}
+
+.role-card[value="trainer"] .role-icon {
+  background: linear-gradient(135deg, rgba(240, 147, 251, 0.1), rgba(245, 87, 108, 0.1));
+  color: #f5576c;
+}
+
+/* Password Strength Meter */
+.password-strength {
+  margin-top: 1rem;
+}
+
+.strength-bar {
+  height: 6px;
+  background: #e9ecef;
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.strength-level {
+  height: 100%;
+  background: #dc3545;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.strength-level.active {
+  background: #28a745;
+}
+
+/* Review Card */
+.review-card {
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+}
+
+.review-item small {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Input Groups */
+.input-group {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #dee2e6;
+  transition: all 0.3s ease;
+}
+
+.input-group:focus-within {
+  border-color: #6a11cb;
+  box-shadow: 0 0 0 3px rgba(106, 17, 203, 0.1);
+}
+
+.input-group-text {
+  background: #f8f9fa;
+  border: none;
+  color: #6c757d;
+}
+
+.form-control {
+  border: none;
+  background: transparent;
+  padding: 0.75rem 1rem;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  background: transparent;
+}
+
+/* Success Icon Animation */
+.success-icon {
+  animation: bounceIn 1s ease;
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.3);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Security Badge */
+.security-badge {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.security-badge:hover {
+  transform: translateY(-3px);
+}
+
+/* Button Styles */
+.btn-primary-gradient {
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%) !important;
+  border: none !important;
+  color: white !important;
+  padding: 0.75rem 2rem !important;
+  font-weight: 600 !important;
+  transition: all 0.3s ease !important;
+}
+
+.btn-primary-gradient:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(106, 17, 203, 0.4) !important;
+}
+
+.btn-outline-secondary {
+  border: 2px solid #dee2e6 !important;
+  color: #6c757d !important;
+  padding: 0.75rem 2rem !important;
+  font-weight: 600 !important;
+  transition: all 0.3s ease !important;
+}
+
+.btn-outline-secondary:hover {
+  background: #f8f9fa !important;
+  border-color: #adb5bd !important;
+}
+
+.btn-success {
+  background: linear-gradient(135deg, #00b09b 0%, #96c93d 100%) !important;
+  border: none !important;
+  color: white !important;
+  padding: 0.75rem 2rem !important;
+  font-weight: 600 !important;
+  transition: all 0.3s ease !important;
+}
+
+.btn-success:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 176, 155, 0.4) !important;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .register-container {
+    background: #f8f9fa;
+  }
+  
+  .right-side {
+    padding: 1rem;
+  }
+  
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .benefit-item {
+    padding: 1rem;
+  }
+  
+  .role-selection .toggle-button-group {
+    flex-direction: column;
+  }
+  
+  .register-card {
+    border-radius: 15px;
+  }
+}
+
+/* Form Validation Styles */
+.is-invalid {
+  border-color: #dc3545 !important;
+}
+
+.invalid-feedback {
+  display: block;
+  color: #dc3545;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+/* Animation for form steps */
+.form-step-enter {
+  opacity: 0;
+  transform: translateX(20px);
+}
+
+.form-step-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.form-step-exit {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.form-step-exit-active {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 300ms, transform 300ms;
+}
